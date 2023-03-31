@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Masimukku Family</title>
+    <style>
+        .d{
+            width:100%;
+            padding:10px;
+            height: 700px;
+        }
+        #g1{
+            background-color: red;
+            color: rgb(0, 255, 255);
+        }
+        body{
+            background-color: grey;
+        }
+        .d2{
+            padding:10px;
+            float:left;
+            margin:50px;
+        }
+        .d2 span{
+            font-size: 2em;
+        }
+        #g1 .d2{
+            background-color: rgb(205, 50, 50);
+            color: rgb(50, 205, 205);
+        }
+        #g2{
+            background-color: orange;
+            color: rgb(0, 90, 255);
+        }
+        #g2 .d2{
+            background-color: rgb(205, 115, 50);
+            color: rgb(60, 150, 215);
+        }
+        #g3{
+            background-color: rgb(255, 255, 0);
+            color: rgb(0, 0, 255);
+        }
+        #g3 .d2{
+            background-color: rgb(205, 205, 50);
+            color: rgb(50, 50, 205);
+        }
+        img{
+            height:300px;
+            display: block;
+        }
+        #g4 img{
+            display: inline;
+            margin: 20px;
+            border: 10px groove yellow;
+            width: 20%;
+            height: auto;
+        }
+        #g4{
+            color: rgb(90, 0, 90);
+            background-color: rgb(165, 255, 165);
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <div id="g1" class="d">
+        <h1>The First Generation</h1>
+        <h5>Founded in 1956</h5>
+        <div class="d2">
+            <img src="imgThatha.jpeg">
+            <span>Thatha</span>
+        </div>
+        <div class="d2">
+            <img src="imgNanamma.jpeg">
+            <span>Nannama</span>
+        </div>
+    </div>
+    <div id="g2" class="d">
+        <h1>The Second Generation</h1>
+        <h5>Founded in 1984</h5>
+        <div class="d2">
+            <img src="imgNanna.jpeg">
+            <span>Nanna</span>
+        </div>
+        <div class="d2">
+            <img src="imgBabai.jpeg">
+            <span>Babai</span>
+        </div>
+        <div class="d2">
+            <img src="imgAmma.jpeg">
+            <span>Amma</span>
+        </div>
+        <div class="d2">
+            <img src="imgPinni.jpeg">
+            <span>Pinni</span>
+        </div>
+    </div>
+    <div id="g3" class="d">
+        <h1>The Third Generation</h1>
+        <h5>Founded in 2012</h5>
+        <div class="d2">
+            <img src="imgSriram.jpeg">
+            <span>Me</span>
+        </div>
+        <div class="d2">
+            <img src="imgThummo.jpeg">
+            <span>Thumoo</span>
+        </div>
+        <div class="d2">
+            <img src="imgAadhya.jpeg">
+            <span>Aadhya</span>
+        </div>
+        <div class="d2">
+            <img src="imgSriyan.jpeg">
+            <span>Sriyan</span>
+        </div>
+    </div>
+    <div id="g4" class="d">
+        <h1>Gallery</h1>
+        <img id="i1" src="img1.jpeg"><img id="i2" src="img2.jpeg"><img id="i3" src="img3.jpeg"><br>
+        <img id="i4" src="img4.jpeg"><img id="i5" src="img5.jpeg">
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    x=1
+    setInterval(function(){
+        $("#i1").attr("src", "img"+(x+1)+".jpeg")
+        $("#i2").attr("src", "img"+(x+8)+".jpeg")
+        $("#i3").attr("src", "img"+(x+15)+".jpeg")
+        $("#i4").attr("src", "img"+(x+22)+".jpeg")
+        $("#i5").attr("src", "img"+(x+29)+".jpeg")
+        if(x==6){
+            x=-1;
+        }
+        x++;
+    }, 5000)
+</script>
+</html>
