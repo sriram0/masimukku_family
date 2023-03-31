@@ -45,7 +45,7 @@
             color: rgb(50, 50, 205);
         }
         img{
-            height:300px;
+            height:250px;
             display: block;
         }
         #g4 img{
@@ -118,7 +118,6 @@
     <div id="g4" class="d">
         <h1>Gallery</h1>
         <img id="i1" src="img1.jpeg"><img id="i2" src="img2.jpeg"><img id="i3" src="img3.jpeg"><br>
-        <img id="i4" src="img4.jpeg"><img id="i5" src="img5.jpeg">
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -126,11 +125,9 @@
     x=1
     setInterval(function(){
         $("#i1").attr("src", "img"+(x+1)+".jpeg")
-        $("#i2").attr("src", "img"+(x+8)+".jpeg")
-        $("#i3").attr("src", "img"+(x+15)+".jpeg")
-        $("#i4").attr("src", "img"+(x+22)+".jpeg")
-        $("#i5").attr("src", "img"+(x+29)+".jpeg")
-        if(x==6){
+        $("#i2").attr("src", "img"+(x+12)+".jpeg")
+        $("#i3").attr("src", "img"+(x+23)+".jpeg")
+        if(x==10){
             x=-1;
         }
         x++;
